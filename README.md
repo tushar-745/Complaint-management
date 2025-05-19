@@ -1,25 +1,90 @@
-# Complaint-management
-A cloud-based complaint management system is a digital platform hosted on the cloud that enables organizations to efficiently handle, track, and resolve customer complaints. Unlike traditional on-premises solutions, these systems offer enhanced accessibility, scalability, and integration capabilities, making them ideal for modern businesses aiming to improve customer satisfaction and operational efficiency
+# Capstone Project - Student Complaint Management System
 
-**🌐 Key Features of Cloud-Based Complaint Management Systems**
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.x-black?logo=flask)
+![Azure](https://img.shields.io/badge/Azure%20Cloud-Deployed-blue?logo=microsoft-azure)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-**Centralized Ticketing System**: Complaints from various channels—such as email, social media, phone calls, and web forms—are consolidated into a single platform. Each complaint is automatically converted into a "ticket" that can be tracked and managed throughout its lifecycle.
+A cloud-based complaint management system for educational institutions, built with Flask and Microsoft Azure services.
 
-**Automated Workflow and Routing**: The system can automatically assign tickets to appropriate agents or departments based on predefined rules, such as complaint type, priority, or customer profile. This automation reduces manual intervention and accelerates response times.
+## Features
 
-**Real-Time Notifications and Alerts**: Both customers and support teams receive timely updates about the status of complaints, ensuring transparency and keeping all stakeholders informed.
+- **Student Portal**
+  - Submit complaints with attachments (images/docs)
+  - Track complaint status in real-time
+  - Receive email notifications
+- **Admin Dashboard**
+  - View and manage all complaints
+  - Assign complaints to staff
+  - Update resolution status
+- **Cloud Integration**
+  - Azure Blob Storage for file uploads
+  - Azure SQL Database for complaint data
+  - Azure Logic Apps for email automation
+  - Application Insights for monitoring
 
-**Omnichannel Support**: Cloud-based systems integrate with multiple communication channels, allowing customers to submit complaints via their preferred medium, whether it's chat, email, social media, or phone.
+## Tech Stack
 
-**✅ Benefits of Implementing a Cloud-Based Complaint Management System**
+**Frontend:**  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
-**Enhanced Customer Satisfaction**: By streamlining the complaint resolution process, organizations can address issues more promptly, leading to improved customer experiences.
+**Backend:**  
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.x-black?logo=flask)
 
-**Operational Efficiency**: Automation and centralized management reduce manual workloads, allowing support teams to focus on more complex tasks.
+**Database & Storage:**  
+![Microsoft SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white)
+![Azure Blob Storage](https://img.shields.io/badge/Azure%20Blob%20Storage-0078D4?logo=microsoft-azure&logoColor=white)
 
-**Data-Driven Decision Making**: Access to detailed analytics enables businesses to make informed decisions, optimize processes, and prevent recurring issues.
+**DevOps:**  
+![Azure Logic Apps](https://img.shields.io/badge/Azure%20Logic%20Apps-0078D4?logo=microsoft-azure&logoColor=white)
+![Application Insights](https://img.shields.io/badge/Application%20Insights-0078D4?logo=microsoft-azure&logoColor=white)
 
-**Cost Savings**: Cloud solutions often have lower upfront costs and reduce the need for extensive IT infrastructure, leading to overall cost savings.
+## Getting Started
 
-**Improved Collaboration**: Cloud platforms facilitate better communication and collaboration among team members, regardless of their location.
+### Prerequisites
+
+- Python 3.8+
+- Azure account (for cloud services)
+- Git
+
+### Installation
+
+# 1. Clone the repository
+* git clone https://github.com/sahutushar/Complaint-management
+* cd Capstone Project---Student-Complaint-Management-System
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Set up environment variables (create a .env based on .env.example)
+ ── Example (.env) ─────────────────────────────────────────
+ AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
+ AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
+ LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
+ APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
+ ───────────────────────────────────────────────────────────
+
+# 4. Run the application locally
+export FLASK_APP=app.py          # use `set` on Windows
+export FLASK_ENV=development
+flask db upgrade                 # create / migrate tables
+flask run                        # starts on http://127.0.0.1:5000
+
+# 5. Live deployment (Azure App Services)
+  • Service  : Azure Web Apps
+  • Region   : Central India
+  • Stack    : Python 3.8
+  • URL      : https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
+
+# (Optional) CI/CD via GitHub Actions can be added for automated deploys.
+
+
+
+
+
+
+
 
